@@ -1,1 +1,13 @@
-bhii
+{
+  "users": {},
+  "chats": {},
+  "timers": {
+    "tempBans": {},
+    "mutes": {},
+    "reminders": []
+  },
+  "settings": {
+    "status": true,
+    "anticall": false
+  }
+}
