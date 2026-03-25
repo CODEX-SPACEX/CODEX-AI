@@ -1,4 +1,3 @@
-
 const { performance } = require('perf_hooks');
 const os = require('os');
 
@@ -7,36 +6,38 @@ module.exports = {
     alias: ['speed', 'p'],
     description: 'Check bot latency and status',
     category: 'Bot',
+    react: '🪐', 
 
     async execute(m, { sock }) {
-        // 🕒 Start timer
+        // 1. Send the reaction
+        await sock.sendMessage(m.chat, { 
+            react: { text: this.react, key: m.key } 
+        });
+
         const startTime = performance.now();
         
         // 🚀 Initial message for the 'Edit' effect
         const initial = await sock.sendMessage(m.chat, { text: '🚀' }, { quoted: m });
         
-        // 🏎️ Calculate Latency
         const endTime = performance.now();
         const latency = (endTime - startTime).toFixed(0);
-
-        // 🖥️ Get Total RAM
         const totalRam = Math.round(os.totalmem() / 1024 / 1024 / 1024);
 
-        // ✨ THE UPDATED DESIGN WITH PONG!
         const responseText = `❍📡 *𝗣𝗢𝗡𝗚 !*\n` +
                              `  ▸ ❍ 🕣 \`${latency}ms\`\n` +
-                             `  ▸ ❍ 🥏 _*𝗔𝗖𝗧𝗜𝗩𝗘 ✓*_\n` +
+                             `  ▸ ❍ 🥏 *𝗔𝗖𝗧𝗜𝗩𝗘 ✓*\n` +
                              `  ▸ ❍ 🧬 *${totalRam}* \`GB Server Ram\``;
 
-        // 📝 Final edit - No images, no forward tags, just your text style.
+        // 📝 Final edit of the text
         await sock.sendMessage(m.chat, { 
             text: responseText, 
             edit: initial.key 
         });
+
+        // 2. ⚡ AUTO-REMOVE REACTION
+        // Sending an empty string to the same key removes the previous reaction
+        await sock.sendMessage(m.chat, { 
+            react: { text: '', key: m.key } 
+        });
     }
 };
-
-
-
-
-
