@@ -1,0 +1,36 @@
+
+# --- Critical Security (The "Never Upload" list) ---
+# Ignores your actual WhatsApp login data
+session/*
+!session/.gitkeep
+creds.json
+
+# --- Dependencies ---
+# Ignores the heavy library folder (installed via npm install)
+node_modules/
+
+# --- Temporary/Media Files ---
+# Ignores files the bot downloads while working
+temp/*
+!temp/.gitkeep
+*.mp4
+*.jpg
+*.png
+*.webp
+*.mp3
+*.tmp
+
+# --- Logs & Debugging ---
+# Ignores error logs that clutter the project
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# --- Environment Secrets ---
+# For API keys (like OpenAI or Database URLs)
+.env
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
