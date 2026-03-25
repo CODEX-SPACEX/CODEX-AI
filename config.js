@@ -11,7 +11,7 @@ global.prefix = ".";
 global.repo = "https://github.com/CODEX-SPACEX/CODEX-AI/tree/main";
 
 // ─── [ STICKER METADATA ] ──────────────
-global.packname = "CODEX AI V2.0";
+global.packname = "CODEX AI";
 global.author = "✦ CODEX-SPACEX";
 
 // ─── [ GLOBAL SWITCHES ] ──────────────
@@ -87,8 +87,9 @@ global.unmuteMsg = `🔊 *𝗨𝗦𝗘𝗥 𝗥𝗘𝗦𝗧𝗢𝗥𝗘𝗗 !*\n
                    `  ▸ ❍ ✅ *𝗦𝘁𝗮𝘁𝘂𝘀:* \`Active / Verified\``;
 
 // ─── [ PRESENCE & INTERACTION ] ────────
-global.autoTyping = "true";      // Bot shows "typing..." when replying
-global.autoRecording = "true";    // Bot shows "recording..." when replying
+global.presence = "true";         // Master switch for presence
+global.autoTyping = "true";      // Bot shows "typing..."
+global.autoRecording = "true";    // Bot shows "recording..."
 global.autoread = "false"; 
 global.statusview = "true";
 global.statusreact = "true"; 
@@ -119,4 +120,6 @@ fs.watchFile(file, () => {
     require(file);
 });
 
-  
+
+
+
