@@ -15,7 +15,7 @@ const chalk = require('chalk');
 const readline = require("readline");
 
 // Load your specific config
-require('../config');
+require('./config');
 
 // ─── [ HELPERS & STORAGE ] ────────────
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) });
