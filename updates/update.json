@@ -1,1 +1,19 @@
-ok
+{
+  "name": "CODEX-AI",
+  "version": "2.0.0",
+  "description": "Advanced WhatsApp Bot System by Codex-SpaceX",
+  "developer": "CODEX-SPACEX",
+  "repository": "https://github.com/CODEX-SPACEX/CODEX-AI",
+  "changelog": "https://github.com/CODEX-SPACEX/CODEX-AI/blob/main/Changelog.md",
+  "update_url": "https://raw.githubusercontent.com/CODEX-SPACEX/CODEX-AI/main/update.json",
+  "features": [
+    "Premium ▸ ❍ UI Design",
+    "Smart Reaction Engine (Auto-Unreact)",
+    "Local Asset Management (Public/images)",
+    "Database Timer Core",
+    "Dynamic System Stats (RAM/Uptime/CMDs)"
+  ]
+}
+
+
+
