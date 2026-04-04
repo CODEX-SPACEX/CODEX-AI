@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="CODEX AI V2.0">
+    <meta property="og:description" content="Advanced WhatsApp Automation & Intelligence System">
+    <meta property="og:image" content="images/bot-logo.png">
+    <meta name="theme-color" content="#00f2ff">
+
+    <title>CODEX AI | Systems Dashboard</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --neon: #00f2ff;
+            --dark-bg: #050505;
+            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(0, 242, 255, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(0, 242, 255, 0.05) 0%, transparent 80%);
+        }
+
+        .dashboard {
+            text-align: center;
+            padding: 3rem;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            max-width: 450px;
+            width: 90%;
+            position: relative;
+        }
+
+        .logo-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 2px solid var(--neon);
+            padding: 5px;
+            object-fit: cover;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 242, 255, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(0, 242, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 242, 255, 0); }
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            color: var(--neon);
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .version {
+            font-size: 0.8rem;
+            opacity: 0.5;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .status-box {
+            background: rgba(0, 255, 127, 0.1);
+            border: 1px solid #00ff7f;
+            color: #00ff7f;
+            padding: 0.8rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #00ff7f;
+            border-radius: 50%;
+            display: inline-block;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        .footer-link {
+            margin-top: 2rem;
+            display: block;
+            color: var(--neon);
+            text-decoration: none;
+            font-size: 0.75rem;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        .footer-link:hover { opacity: 1; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <div class="logo-container">
+            <img src="images/bot-logo.png" alt="CODEX AI" class="logo">
+        </div>
+
+        <h1>CODEX AI</h1>
+        <span class="version">V2.0 STABLE VERSION</span>
+
+        <div class="status-box">
+            <span class="dot"></span>
+            SYSTEMS OPERATIONAL
+        </div>
+
+        <a href="https://github.com/CODEX-SPACEX" class="footer-link">POWERED BY CODEX-SPACEX CORE</a>
+    </div>
+
+</body>
+</html>
+
+
+
