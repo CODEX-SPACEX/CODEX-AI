@@ -1,0 +1,37 @@
+
+🪐 CODEX-AI DEVELOPMENT ROADMAP
+================================
+
+[✔] CORE ENGINE: Command Loader & Message Handler.
+[✔] DATABASE: LocalDb.json initialized with CRUD functions.
+[✔] ASSETS: Local Public/images/ folder (menu.jpg, loading.jpg).
+[✔] UI DESIGN: ▸ ❍ Premium Menu style integrated.
+[✔] UX: Auto-React (💬) and Auto-Unreact ("") system.
+
+--- 🛠️ PENDING TASKS (HIGH PRIORITY) ---
+
+[ ] GROUP MUTE TIMER: 
+    - Create .mute [time] command.
+    - Hook into Database for auto-unmute.
+    - Test background interval loop in Client.js.
+
+[ ] AI INTEGRATION:
+    - Link OpenAI/Gemini API key in config.js.
+    - Create .ai command with "loading.jpg" thumbnail.
+
+[ ] MEDIA DOWNLOADERS:
+    - Add .song and .video (yt-dlp or alternative).
+    - Ensure loading.jpg displays during download buffer.
+
+[ ] AUTH SYSTEM:
+    - Add .addsudo / .delsudo for owner management.
+    - Protect Admin commands from regular users.
+
+--- 📂 MAINTENANCE ---
+
+[ ] Optimize RAM usage for 24/7 hosting.
+[ ] Update Changelog.md after every major push.
+
+
+
+
