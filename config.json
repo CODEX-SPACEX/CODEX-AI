@@ -1,0 +1,36 @@
+{
+  "botName": "CODEX-AI V3.0",
+  "prefix": ".",
+  "owner": {
+    "name": "Owner",
+    "number": "2349064626405@s.whatsapp.net"
+  },
+  "mods": [],
+  "sudo": [],
+  "mode": "public",
+  "autoTyping": true,
+  "autoRecording": false,
+  "autoRead": false,
+  "alwaysOnline": false,
+  "statusView": {
+    "enabled": true
+  },
+  "statusReact": {
+    "enabled": true,
+    "emoji": "👀"
+  },
+  "antiCall": true,
+  "antiLink": { "enabled": true,  "action": "warn", "maxWarns": 3 },
+  "antiSpam": { "enabled": true,  "action": "warn", "maxWarns": 3, "limit": 5, "cooldown": 10000 },
+  "antiBot":  { "enabled": true,  "action": "kick", "maxWarns": 1 },
+  "antiTag":  { "enabled": true,  "action": "warn", "maxWarns": 3 },
+  "antiGame": { "enabled": false, "action": "warn", "maxWarns": 3 },
+  "antiGroupMention": { "enabled": false, "action": "warn", "maxWarns": 3 },
+  "antiDelete": { "enabled": false, "forwardTo": "dm" },
+  "antiEdit":   { "enabled": false, "forwardTo": "dm" },
+  "mentionReact": { "enabled": false, "emoji": "❤️" },
+  "autoReact":    { "enabled": false, "emoji": "❤️" },
+  "welcome": true,
+  "goodbye": true,
+  "sessionName": "session"
+}
